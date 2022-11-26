@@ -1,0 +1,31 @@
+h1 {
+    background-color: black;
+    font-family: sans-serif;
+    color: aqua;
+    font-weight: 900;
+
+}
+
+span {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    background-color: rebeccapurple;
+    font-family: sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+
+}
+
+h3 {
+    text-align: right;
+    background-color: cornflowerblue;
+    font-family: sans-serif;
+    color: #20124b;
+    text-decoration: underline;
+
+
+}
