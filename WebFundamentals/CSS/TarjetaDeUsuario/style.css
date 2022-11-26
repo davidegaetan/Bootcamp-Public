@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+
+p {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.icon {
+    margin-left: 20px;
+    margin-right: 5px;
+    height: 15px;
+}
+
+#profile {
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+}
+
+.align-icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    display: inline;
+}
+
+#edit {
+    text-decoration: underline;
+    color: #22659f;
+    display: inline;
+    height: 20px;
+}
+
+#message {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px 4px grey;
+    margin: auto;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#message .header {
+    background-color: #17a2b8;
+    padding: 10px;
+    border: 2px #ddd;
+    height: 50px;
+}
+
+#message button {
+    height: 30px;
+    width: 80px;
+}
