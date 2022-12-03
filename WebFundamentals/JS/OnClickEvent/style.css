@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 55%;
+
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.nav-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+main{
+    display: flex;
+    margin: auto;
+    width: 55%;
+    
+}
+
+section{
+    flex: 5;
+    padding: 20px 10px 0px 0px;
+}
+
+aside{
+    flex: 2;
+    padding: 20px 0px 0px 10px;
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button{
+    border: 3px solid black;
+    width: fit-content;
+    padding: 0px 5px;
+    background-color: #2b78e4;
+    color: white;
+    font-size: x-large;
+    font-family: monospace;
+    box-shadow: 3px 3px black ;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.left button{
+    background-color: #ffd966;
+    color: black;
+    margin: 10px 5px;
+    width: min-content;
+    padding: 5px 10px;
+}
+
+.side-windows button{
+    background-color: #93c47d;
+    color: black;
+    margin: 10px 0px;
+    width: min-content;
+    padding: 5px 20px;
+}
+
+.right{
+text-align: center;
+display: flex;
+align-items: center;
+padding: 20px;
+flex: 2;
+font-size: larger;
+}
+
+p{
+    font-weight: bold;
+}
+
+.left{
+    padding: 20px;
+    flex: 1;
+}
+
+.side-windows{
+    padding: 20px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+.search-bar input{
+border: 2px solid black;
+height: 30px;
+width: 300px;
+padding: 0px 5px;
+}
+
+h4{
+    font-style: italic;
+}
