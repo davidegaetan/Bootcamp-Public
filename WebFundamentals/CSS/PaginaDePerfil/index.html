@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <title>Pagina de Perfil</title>
 </head>
- 
+
 <body>
     <nav>
         <div class="sub-nav">
@@ -38,15 +38,14 @@
                                     alt="map pin icon" />
                                 <h3>Asuncion</h3>
                             </div>
-
                         </div>
                         <p>Developer | Engineer | Problem Solver</p>
                         <p>MERN Stack</p>
                         <div class="align-icon-text">
-                            <div class="group-together"><img class="icon" src="./icons/gear.png" alt="gear icon" />
-                                <div id="edit">edit profile</div>
+                            <div class="group-together">
+                                <img class="icon" src="./icons/gear.png" alt="gear icon" onclick="editName()" />
+                                <div id="edit" onclick="editName()">edit profile</div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -84,26 +83,28 @@
                         Connection Requests
                     </div>
                     <div class="card-body">
-                        <div class="align-icon-text">
+                        <div class="align-icon-text" id="1">
                             <div class=group-together>
                                 <img class="request-icon" src="./icons/user-circle.png" alt="map pin icon" />
                                 <h3>Todd E</h3>
                             </div>
-
                             <div class="group-together">
-                                <img class="request-icon" src="./icons/accept-circle.png" alt="accept-request-icon">
-                                <img class="request-icon" src="./icons/close-circle.png" alt="decline-request-icon">
+                                <img class="request-icon" id="1" src="./icons/accept-circle.png"
+                                    alt="accept-request-icon" onclick="removeButton(this),addConnection()">
+                                <img class="request-icon" id="1" src="./icons/close-circle.png"
+                                    alt="decline-request-icon" onclick="removeButton(this)">
                             </div>
                         </div>
-                        <div class="align-icon-text">
+                        <div class="align-icon-text" id="2">
                             <div class="group-together">
                                 <img class="request-icon" src="./icons/user-circle.png" alt="map pin icon" />
                                 <h3>Phil K</h3>
                             </div>
-
                             <div class="group-together">
-                                <img class="request-icon" src="./icons/accept-circle.png" alt="accept-request-icon">
-                                <img class="request-icon" src="./icons/close-circle.png" alt="decline-request-icon">
+                                <img class="request-icon" id="2" src="./icons/accept-circle.png"
+                                    alt="accept-request-icon" onclick="removeButton(this),addConnection(this)">
+                                <img class="request-icon" id="2" src="./icons/close-circle.png"
+                                    alt="decline-request-icon" onclick="removeButton(this)">
                             </div>
                         </div>
                     </div>
@@ -112,7 +113,7 @@
             <article>
                 <div id="connections">
                     <div class="header">
-                        <div class="header-icon">500&#43;</div>Your Connections
+                        <div class="header-icon">418</div>Your Connections
                     </div>
                     <div class="card-body">
                         <div class="align-icon-text">
@@ -120,28 +121,24 @@
                                     alt="map pin icon" />
                                 <h3>Adrien D</h3>
                             </div>
-
                         </div>
                         <div class="align-icon-text">
                             <div class="group-together"><img class="request-icon" src="./icons/user-circle.png"
                                     alt="map pin icon" />
                                 <h3>Anne J</h3>
                             </div>
-
                         </div>
                         <div class="align-icon-text">
                             <div class="group-together"><img class="request-icon" src="./icons/user-circle.png"
                                     alt="map pin icon" />
                                 <h3>Alayne T</h3>
                             </div>
-
                         </div>
                         <div class="align-icon-text">
                             <div class="group-together"><img class="request-icon" src="./icons/user-circle.png"
                                     alt="map pin icon" />
                                 <h3>Arry Y</h3>
                             </div>
-
                         </div>
                     </div>
                     <div class="card-body" id="view-more">
