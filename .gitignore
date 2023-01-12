@@ -7,3 +7,4 @@ Classes/
 .vscode/
 *.jpg
 YellowBelt/
+/node_modules
