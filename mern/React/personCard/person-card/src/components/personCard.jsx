@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class PersonCard extends Component {
+//////////// Class Component//////////////////////
+/*class PersonCard extends Component {
     constructor(props) {
         super(props);
         this.state = { age: props.age }
@@ -19,6 +20,20 @@ class PersonCard extends Component {
         )
     }
     newAge = () => this.setState({ age: this.state.age + 1 });
+}*/
+
+///////////////Componente Funcional//////////////////
+const PersonCard = props => {
+    return (
+        <div className="PersonCard">
+            <h2>{props.lastName}, {props.firstName}</h2>
+            <p>Age: {props.age}</p>
+            <p>Hair Color: {props.hairColor}</p>
+            {/*<button onClick={this.newAge}>
+                Birthday Button for {props.firstName} {props.lastName}!
+            </button>*/}
+        </div>
+    );
 }
 
 export default PersonCard;
