@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 //////////// Class Component//////////////////////
 /*class PersonCard extends Component {
@@ -24,16 +24,24 @@ import React from "react";
 
 ///////////////Componente Funcional//////////////////
 const PersonCard = props => {
+    const [state, setState] = useState({
+        age: props.age
+    })
+    const newAge = e => {
+        console.log(state)
+        setState({ age: state.age + 1 })
+    };
     return (
         <div className="PersonCard">
             <h2>{props.lastName}, {props.firstName}</h2>
-            <p>Age: {props.age}</p>
+            <p>Age: {state.age}</p>
             <p>Hair Color: {props.hairColor}</p>
-            {/*<button onClick={this.newAge}>
+            <button onClick={newAge}>
                 Birthday Button for {props.firstName} {props.lastName}!
-            </button>*/}
+            </button>
         </div>
     );
+
 }
 
 export default PersonCard;
