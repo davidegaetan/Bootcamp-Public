@@ -22,25 +22,46 @@ const UserInput = (props) => {
         <div className="container">
             <div className="form-section">
                 <label> First Name: </label>
-                <input type="text" onChange={(e) => setFName(e.target.value)} value = {fName} />
+                <input type="text" onChange={(e) => setFName(e.target.value)} value={fName} />
             </div>
+            {
+                fName && fName.length < 2 ?
+                    <p style={{color: "red"}} >First Name must be at least 2 characters long</p> :
+                    <p></p>
+            }
             <div className="form-section">
                 <label> Last Name: </label>
-                <input type="text" onChange={(e) => setLName(e.target.value)} value = {lName} />
+                <input type="text" onChange={(e) => setLName(e.target.value)} value={lName} />
             </div>
+            {
+                lName && lName.length < 2 ?
+                    <p style={{color: "red"}} >Last Name must be at least 2 characters long</p> :
+                    <p></p>
+            }
             <div className="form-section">
                 <label> Email: </label>
-                <input type="email" onChange={(e) => setEmail(e.target.value)} value = {email} />
+                <input type="email" onChange={(e) => setEmail(e.target.value)} value={email} />
             </div>
+            {
+                email && email.length < 5 ?
+                    <p style={{color: "red"}} >Email must be at least 5 characters long</p> :
+                    <p></p>
+            }
             <div className="form-section">
                 <label> Password: </label>
-                <input type="password" onChange={(e) => setPassword(e.target.value)} value = {password}/>
+                <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} />
             </div>
+            <p></p>
             <div className="form-section">
                 <label> Confirm Password: </label>
-                <input type="password" onChange={(e) => setConfirmPassword(e.target.value)} value = {confirmPassword} />
+                <input type="password" onChange={(e) => setConfirmPassword(e.target.value)} value={confirmPassword} />
             </div>
-            <FormData fName = {newUser.fName} email = {newUser.email} lName = {newUser.lName} password = {newUser.password} confirmPassword = {newUser.confirmPassword}/>
+            {
+                password && confirmPassword && password !== confirmPassword ?
+                    <p style={{color: "red"}} >Passwords must match</p> :
+                    <p></p>
+            }
+            <FormData fName={newUser.fName} email={newUser.email} lName={newUser.lName} password={newUser.password} confirmPassword={newUser.confirmPassword} />
         </div>
 
     );
