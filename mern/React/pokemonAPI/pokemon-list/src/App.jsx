@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const [poke,setPoke] = useState([]);
-  const url = 'https://pokeapi.co/api/v2/pokemon';
+  const url = 'https://pokeapi.co/api/v2/pokemon/?limit=807';
   
     const fetchPokemon =()=>{
       fetch(url)
