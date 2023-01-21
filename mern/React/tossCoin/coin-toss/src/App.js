@@ -19,21 +19,21 @@ function App() {
         } else {
           headsCount = 0;
         }
-      }
-      if(headsCount === 5){
-        resolve(`It took ${attempts} tries to flip five "heads"`)
-      }else{
-        reject(`Failed to to flip five "heads"`)
+        if(headsCount === 5){
+          resolve(`It took ${attempts} tries to flip five "heads"`)
+        }else if(attempts>100){
+          reject(`Failed to to flip five "heads" in 100 attempts`)
+        }
       }
     });
   }
   
 
   const startExperiment = () => {
-    alert("Open the console to see results")
     fiveHeadsSync()
     .then(res => console.log(res))
     .catch(err => console.log(err));
+    alert("Open the console to see results")
     console.log("When does this run now?");
     console.log("This probably runs before the fiveHeadsSync function completes");
   }
