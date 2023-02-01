@@ -13,13 +13,8 @@ const ProductForm = () => {
             price,
             description
         })
-        .then(res=>console.log(res,"res"))
+        .then(res=>console.log(res))
         .catch(err=>console.log(err,"err"))
-        console.log({
-            title,
-            price,
-            description
-        })
     }
     
     return (
