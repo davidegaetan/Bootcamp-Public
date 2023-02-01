@@ -7,7 +7,6 @@ const ProductForm = () => {
     const [description, setDescription] = useState("");
 
     const createProduct = (e) => {
-        e.preventDefault();
         axios.post('http://localhost:8000/api/product/new/',{
             title,
             price,

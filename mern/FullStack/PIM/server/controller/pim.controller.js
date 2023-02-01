@@ -18,14 +18,14 @@ module.exports.insertNewProduct = (req,res) => {
     .catch(err => res.json({ message: "Something went wrong this is running", error: err }));
 }
 
-// module.exports.updateProduct = (req,res) => {
-//     Product.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
-//     .then(updatedProduct => res.json({Products: updatedProduct}))
-//     .catch(err => res.json({ message: "Something went wrong", error: err}));
-// }
+module.exports.updateProduct = (req,res) => {
+    Product.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+    .then(updatedProduct => res.json({Products: updatedProduct}))
+    .catch(err => res.json({ message: "Something went wrong", error: err}));
+}
 
-// module.exports.deleteProduct = (req,res) => {
-//     Product.remove({ _id: req.params.id })
-//     .then(result => res.json({result: result}))
-//     .catch(err => res.json({ message: "Something went wrong", error: err }));
-// }
+module.exports.deleteProduct = (req,res) => {
+    Product.remove({ _id: req.params.id })
+    .then(result => res.json({result: result}))
+    .catch(err => res.json({ message: "Something went wrong", error: err }));
+}
